@@ -1,0 +1,464 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/fondoorigi.jpg);
+}
+
+.personaje1{
+    background-image: url(../img/fondo.jpg);
+}
+
+.container-principal{
+    background: repeating-linear-gradient(-45deg, rgba(3, 247, 255, 0.432) 50%, #f5a697 100%);
+    backdrop-filter: blur(3px);
+    margin: 40px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.personaje2{
+    background-image: url(../img/fondo2.jpg);
+}
+
+.container-info{
+    background: repeating-linear-gradient( rgba(146, 238, 241, 0.432), rgba(3, 247, 255, 0.432));
+    backdrop-filter: blur(3px);
+    margin: 40px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 70px;
+}
+
+.section1{
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.section2{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.section3{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.section4{
+    grid-column: 4/5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+.property-card
+{
+  height:18em;
+  width:14em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.property-image 
+{
+  height:20em;
+  width:14em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.im1{
+    background-image:url(../img/card1-1.jpg);
+}
+
+.im2{
+    background-image:url(../img/card1-2.jpg);
+}
+.im3{
+    background-image:url(../img/card1-3.jpg);
+}
+.im4{
+    background-image:url(../img/card1-4.jpg);
+}
+
+/* Bottom Card Section */
+
+.property-description
+{
+  background-color: #fafafcc2;
+  height:0px;
+  width:14em;
+  position:absolute;
+  bottom: -20px;;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+
+
+.property-card:hover .property-description
+{
+  height:12em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:18em;
+}
+
+
+
+
+
+.container-principal2{
+    background: repeating-linear-gradient(-45deg,#f5c776d3  50%, #e7a426a6 100%);
+    backdrop-filter: blur(3px);
+    margin: 40px;
+    border-radius: 10px;
+}
+
+
+.container-info2{
+    background: repeating-linear-gradient( #f5c776d3, #e7a426a6);
+    backdrop-filter: blur(3px);
+    margin: 40px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 70px;
+}
+
+.im2-1{
+    background-image:url(../img/card2-4.jpg);
+
+}
+
+.im2-2{
+    background-image:url(../img/card2-2.jpg);
+}
+.im2-3{
+    background-image:url(../img/card2-3.jpg);
+}
+.im2-4{
+    background-image:url(../img/card2-1.jpg);
+}
+
+
+.personaje3{
+    background-image: url(../img/fondo3.jpg);
+    background-size: cover;
+}
+
+.container-principal3{
+    background: repeating-linear-gradient(-45deg,#76bcf5d3  50%, #013611a6 100%);
+    backdrop-filter: blur(3px);
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.container-info3{
+    background: repeating-linear-gradient( #76bcf5d3,#013611a6);
+    backdrop-filter: blur(3px);
+    margin: 40px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 70px;
+}
+
+.im3-1{
+    background-image:url(../img/card3-1.jpg);
+
+}
+
+.im3-2{
+    background-image:url(../img/card3-2.jpg);
+}
+.im3-3{
+    background-image:url(../img/card3-3.jpg);
+}
+.im3-4{
+    background-image:url(../img/card3-4.jpg);
+}
+
+.personaje4{
+    background-image: url(../img/fondo4.jpg);
+}
+
+.container-principal4{
+    background: repeating-linear-gradient(-45deg,#c7b8b8d3  50%, #000000a6 100%);
+    backdrop-filter: blur(5px);
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.container-info4{
+    background: repeating-linear-gradient( #3a3a3ad3,#e7e7e7a6);
+    backdrop-filter: blur(5px);
+    margin: 40px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 70px;
+}
+
+.im4-1{
+    background-image:url(../img/card4-1.jpg);
+
+}
+
+.im4-2{
+    background-image:url(../img/card4-2.jpg);
+}
+.im4-3{
+    background-image:url(../img/card4-3.jpg);
+}
+.im4-4{
+    background-image:url(../img/card4-4.jpg);
+}
+
+.personaje4{
+    background-image: url(../img/fondo4.jpg);
+}
+
+.personaje5{
+    background-image: url(../img/fondo5.jpg);
+}
+
+.container-principal5{
+    background: repeating-linear-gradient(-45deg,#aefff85d  50%, #70b1fcd5 100%);
+    backdrop-filter: blur(4px);
+    margin: 40px;
+    border-radius: 10px;
+}
+
+#nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 7px;
+    margin: 10px;
+    font-weight: 900;
+
+}
+
+#nav a{
+    cursor: pointer;
+    color: rgb(26, 26, 26);
+}
+
+#container{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+
+.title, .title2{
+    margin-top: 20px;
+    grid-column: 1/2;
+}
+
+.button-info{
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+.button-info:hover{
+    background-color: rgba(0, 123, 128, 0.692);
+    color: white;
+    -webkit-transform:scale(6.3);
+    transform:scale(0.9);
+}
+
+.ay{
+    max-width: 15px;
+    margin-top: 10px;
+}
+
+.spirited{
+    font-size: 30px;
+}
+
+.spirited2{
+    font-size: 30px;
+}
+.image{
+    width: 100%;
+    margin-top: 20px;
+    grid-column: 2/3;
+    position: center;
+}
+
+.image img{
+    max-width: 150px;
+    cursor: pointer;
+}
+
+.image2 img{
+    max-width: 200px;
+    cursor: pointer;
+}
+
+
+
+.text{
+    font-size: 6px;
+    margin-top: 0px;
+    grid-column: 3/4;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.oscar {
+    max-width: 40px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+}
+
+.titleoscar{
+    grid-column: 3/6;
+}
+
+@media (min-width: 1024px){
+    #nav{
+        font-size: 13px;
+        margin: 50px;
+        margin-top: 1px;
+    }
+
+    .image img{
+        max-width: 400px;
+    }
+
+    .image img:hover{
+        -webkit-transform:scale(6.3);
+        transform:scale(0.9);
+    }
+    .image2 img{
+        max-width: 500px;
+    }
+
+    .image2 img:hover{
+        -webkit-transform:scale(6.3);
+        transform:scale(0.9);
+    }
+
+
+    .image3 img{
+        max-width: 500px;
+    }
+
+    .image3 img:hover{
+        -webkit-transform:scale(6.3);
+        transform:scale(0.9);
+    }
+
+    .image4 img{
+        max-width: 400px;
+    }
+
+    .title{
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    .title2{
+        margin-top: 40px;
+        margin-left: 50px;
+    }
+
+    .spirited{
+        font-size: 90px;
+        margin-bottom: 60px;
+    }
+
+    .spirited2{
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    .year{
+        font-size: 20px;
+    }
+
+    .button-info{
+        background-color: rgb(236, 236, 236);
+        cursor: pointer;
+        font-size: 20px;
+        padding: 4px;
+        border-radius: 6px;
+        text-decoration: none;
+    }
+
+    .ay{
+        max-width: 20px;
+    }
+
+    .text{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .text2{
+        font-size: 15px;
+        margin-top: 200px;
+    }
+
+    .oscar {
+        max-width: 100px;
+        margin-left: 150px;
+        margin-bottom: 20px;
+    }
+}
+
